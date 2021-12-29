@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art project</title>
+        <!-- Reset -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <!-- Blocks -->
+        <link rel="stylesheet" href="./css/blocks/btn.css">
+        <link rel="stylesheet" href="./css/blocks/header.css">
+        <link rel="stylesheet" href="./css/blocks/footer.css">
+        <link rel="stylesheet" href="./not-home-start.css">
+        <link rel="stylesheet" href="./packages.css">
+        <link rel="stylesheet" href="/css/blocks/courses.css">
+    </head>
+    <body>
+        <script src="/js/loadTime.js"></script>
+        <header class="header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-logo"><img src="./img/image.webp" alt="Logo"></div>
+                    <nav class="header-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                    </nav>
+                    <div class="header-login">
+                        <a href="#" class="header-login-link">Sign in</a>
+                        <a href="#" class="button">Start Trial</a>
+                    </div>
+                    
+                    <button type="button" class="mobile-nav-button">
+						<span class="mobile-nav-button__icon"></span>
+					</button>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="home">
+                <div class="container">
+                    <div class="home-content">
+                        <h1 class="home-heading">Courses</h1>
+                        <div class="home-text" >
+                            <p>Art is something that blooms just a second before it disappears forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="packages">
+                <div class="container">
+                    <div class="packages-header">
+                        <div class="packages-header-head">
+                            <h2>Pricing</h2>
+                        </div>
+                        <div class="packages-header-content">
+                            <table class="gridTable">
+                                <tr>
+                                    <th class="darkTH">Название</th>
+                                    <th class="brightTH">Масляная живопись</th>
+                                    <th class="brightTH">Акварель</th>
+                                    <th class="brightTH">Акриловая живопись</th>
+                                    <th class="brightTH">Фэшн-иллюстрация</th>
+                                </tr>
+                                <tr>
+                                    <th class="darkTH">Стоимость (рублей\месяц)</th>
+                                    <td class="brightTD">30.000</td>
+                                    <td class="brightTD">15.000</td>
+                                    <td class="brightTD">30.000</td>
+                                    <td class="brightTD">20.000</td>
+                                </tr>
+                                <tr>
+                                    <th class="darkTH">Ведущий куратор</th>
+                                    <td class="darkTD">Ю.А.Онешко</td>
+                                    <td class="darkTD">К.Гридин</td>
+                                    <td class="darkTD">А.В.Власов</td>
+                                    <td class="darkTD">Р.Тинюков</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                
+                <div class="checkboxContainer">
+                    <input class="checkbox" id="oil" type="checkbox"/>
+                    <label class="cbx" for="oil">Масло<span>
+                    <input class="checkbox" id="akril" type="checkbox"/>
+                    <label class="cbx" for="akril">Акрил<span>
+                    <input class="checkbox" id="aquarel" type="checkbox"/>
+                    <label class="cbx" for="aquarel">Акварель<span>
+                    <input class="checkbox" id="illustration" type="checkbox"/>
+                    <label class="cbx" for="illustration">Иллюстрации<span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="price">
+                    <span>Финальная цена: </span>
+                    <span id="priceNumber">0</span>
+                </div>
+            </section>
+            
+            <section>
+                <div id="todo">
+                    <h1>Опишите, чего вы ждете от курса<i id="pensil" class="fas fa-pencil-alt"></i></h1>
+                    <input type="text" placeholder="Добавить список">
+                    <ul class="todos"></ul>
+                    <div id="buttons">
+                        <button class="save">Сохранить</button>
+                        <button class="clear">Очистить</button>
+                    </div>
+                </div>
+                <div id = "overlay">
+                    <a href="javascript:void(0)" class="closeTips">&times;</a>
+                    <ul class="tips">
+                        <li>Чтобы спрятать или показать поле ввода, кликните на карандаш</li>
+                        <li>Для добавления списка дел напишите текст в поле ввода и нажмите Ввод</li>
+                        <li>Чтобы удалить один пункт, наведите на него и нажмите на значок корзины</li>
+                        <li>Чтобы удалить все списки дел, нажмите "Очистить"</li>
+                        <li>Нажмите "Сохранить", чтобы сохранить список дел на потом</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <img src="./img/image.webp" alt="Footer-logo" class="footer-logo">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <div id="speedFooter"></div>
+        <script src="/js/courses.js"></script>
+        <script src="/js/todo.js"></script>
+    </body>
+</html>

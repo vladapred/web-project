@@ -1,0 +1,109 @@
+.header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 100;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    margin-left: 200px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav li + li{
+    margin-left: 70px;
+}
+
+
+.header-nav a:after {
+    display: block; 
+    content: ""; 
+    height: 3px; 
+    width: 0%; 
+    background-color: #e75704; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.header-nav a:hover:after, a:focus:after {
+    width: 100%;
+}
+
+.header-nav a{
+    text-decoration:none; 
+    display: inline-block; 
+    
+}
+
+
+.header-login{
+    display: flex; 
+    align-items: center;  
+    margin-left: auto;
+}
+
+/* в видосе час :06 где-то пояснение */
+.header-login > * + *{ 
+    margin-left: 35px;
+}
+
+.header-login-link{
+    margin-top: -1px;
+    color:rgb(230, 230, 230) !important;
+    transition: color 0.2s ease;
+}   
+
+.header-login-link:hover {
+	color: #e75704;
+}
+
+.button, a.button{
+    display: inline-block;
+    height: 51px;
+    line-height: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #292929;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.button:hover, a.button:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+@media (max-width: 1199px){
+    .header-nav{
+        margin-left: 30px;
+    }
+
+    .header-nav li + li{
+          margin-left: 50px;
+    }
+
+    .header-login{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px){
+    .header-nav, .header-login{
+       display: none;
+    }
+}

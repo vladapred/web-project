@@ -1,0 +1,272 @@
+.packages{
+    position: relative;
+    text-align: center;
+}
+
+.packages-header{
+    padding-bottom: 52px;
+    justify-content: space-between;
+}
+
+.packages-header-head {
+    width: 100%;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Georgia', serif;
+    color: #ff6800;
+}
+
+.packages-header-content{
+    padding-top: 30px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.gridTable {
+    display: grid;
+    grid-template-columns: repeat(5, fr);
+    width: 80%;
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+}
+
+.gridTable .darkTD {
+    background-color: rgb(209, 209, 209);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.gridTable .brightTD {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.gridTable  .darkTH {
+    background-color: rgb(44, 44, 44);
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+}
+
+.gridTable .brightTH {
+    background-color: rgb(207, 87, 87);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+html {
+    min-height: 100%;
+}
+
+main {
+    margin-top: 70px;
+    padding-bottom: 200px;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+input {
+    background: rgb(233, 233, 233);
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 0.5px;
+    padding-left: 25px;
+    border-radius: 4px;
+    color: gray;
+    transition: border-radius ease 0.5s;
+}
+
+input:focus {
+    background: #edf1f5;
+    border: 3px solid #ffffff;
+    outline: none;
+    border-radius: 15px;
+}
+
+span.todo-trash {
+    margin-right: 10px;
+    text-align: center;
+    height: 50px;
+    width: 0;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s linear;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: Bad Script;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+#buttons {
+    display: inline-block;
+    text-align: center;
+    margin: 2px 4px;
+    padding-top: 10px;
+}
+
+#todo {
+    margin: 0 auto;
+    max-width: 400px;
+    height: 100%;
+    background: white;
+    position: relative;
+    padding: 30px;
+}
+
+#overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#overlay .closeTips {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 60px;
+    color: #e3e3e4;
+    cursor: pointer;
+}
+
+#overlay li {
+    padding: 8px;
+    list-style-type: circle;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+}
+
+.todos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todos li {
+    background: #f7f7f7;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.todo input {
+    background-color: rgb(169, 169, 169);
+}
+
+.todos li span.todo-text {
+    padding: 0 8px;
+}
+
+.todos li:nth-child(2n) {
+    background: #edf1f5;
+}
+
+.todos li:hover span.todo-trash {
+    width: 50px;
+    opacity: 1.0;
+    margin-left: 5px;
+}
+
+.display {
+    display: none;
+    transition: 0.3s linear;
+}
+
+.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-pencil-alt {
+    float: right;
+    padding-top: 8px;
+}
+
+.fa-trash-alt {
+    color: #464646;
+}
+
+.tips {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*  if screen size less than 450px, resize tips lists and close btn so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    #todo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.checkboxContainer {
+    text-align: center;
+}
+
+.price {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}

@@ -2,9 +2,179 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Изучаем HTML и CSS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art project</title>
+        <!-- Reset -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <!-- Blocks -->
+        <link rel="stylesheet" href="./css/blocks/btn.css">
+        <link rel="stylesheet" href="./css/blocks/header.css">
+        <link rel="stylesheet" href="./css/blocks/home.css">
+        <link rel="stylesheet" href="./css/blocks/how.css">
+        <link rel="stylesheet" href="./css/blocks/story.css">
+        <link rel="stylesheet" href="./css/blocks/footer.css">
+        <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
+		<link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
+        <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
     </head>
     <body>
+        <script src="/js/loadTime.js"></script>
+        <header class="header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-logo"><img src="./img/image.webp" alt="Logo"></div>
+                    <nav class="header-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                    </nav>
+                    <div class="header-login">
+                        <a href="#" class="header-login-link">Sign in</a>
+                        <a href="#" class="button">Start Trial</a>
+                    </div>
+                    
+                    <button type="button" class="mobile-nav-button">
+						<span class="mobile-nav-button__icon"></span>
+					</button>
 
+                </div>
+            </div>
+        </header>
+        <div class="mobile-nav">
+			<img class="mobile-nav-logo" src="./img/image.webp" alt="Logo" />
+
+			<nav class="mobile-nav-list">
+				<ul>
+					<li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="mobile-login">
+				<a class="" href="#">Sign in</a>
+				<a href="#" class="btn btn-big">Start Trial</a>
+			</div>
+		</div>
+
+        <main>
+            <section class="home">
+                <div class="container">
+                    <div class="home-content">
+                        <h1 class="home-heading">Naruto</h1>
+                        <div class="home-text">
+                            <p>Art is something that blooms just a second before it disappears forever.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-bg-img" >
+                    <img src="./img/home/bg.jpg" alt="Background cover">
+                </div>
+            </section>
+
+            <section class="how">
+                <div class="container">
+
+
+                    <div class="how-header">
+                        <div class="how-header-head">
+                            <h2 class="how-header-head-title">How it works</h2>
+                            <h3 class="how-header-head-subtitle">Immerse yourself in art & create in 3 steps</h3>
+                        </div>
+                        <div class="how-header-content">
+                            <p>Art training is created so that anyone can touch art. Learning to draw should be accessible to everyone, regardless of skills. After all, talent is only 5% of success, the rest is labor.</p>
+                        </div>
+                    </div> 
+
+
+                    <div class="how-steps">
+                        <div class="step">
+                            <h3 class="step-heading" data-number="01">Registration</h3>
+                            <div class="step-text">
+                                <p>Go through a short quick registration on our website to safely make purchases on the site. Also, after a quick registration, we send a special gift to new users. After all, nothing lifts the mood like presents.</p>
+                            </div>
+                            <!-- За счет отдельного блока, картинка будет расти пропорционально, те высота будет расти изходя из ширины -->
+                            <div class="step-img-wrapped">
+                                <img class="step-img" src="./img/step/step1.jpg" alt="Step img">
+                            </div>
+                        </div>
+
+                        <!-- Next step -->
+
+                        <div class="step">
+                            <h3 class="step-heading" data-number="02">Package Selection</h3>
+                            <div class="step-text">
+                                <p>Choose your package from the ones provided by us or create it yourself! We have added the function of our own compilation of lessons and selection of the examiner.</p>
+                            </div>
+                            <div class="step-img-wrapped">
+                                <img class="step-img" src="./img/step/step2.jpg" alt="Step img">
+                            </div>
+                        </div>
+
+                        <!-- Next step -->
+
+                        <div class="step">
+                            <h3 class="step-heading" data-number="03">Pay!</h3>
+                            <div class="step-text">
+                                <p>Pay for your chosen product through any banking system. Tune in to the perception of beauty and prepare all the necessary materials. And finally, wait for the start of classes!</p>
+                            </div>
+                            <div class="step-img-wrapped">
+                                <img class="step-img" src="./img/step/step3.jpg" alt="Step img">
+                            </div>
+                        </div>
+            </section>
+
+            <section class="story">
+                <div class="container">
+                    <div class="story-row">
+
+                        <div class="story-content">
+                            <div class="story-heading">Let's listen to a couple of tips from our expert</div>
+                            <div class="story-text">
+                                <p>What is it like to be that artist and what is needed for this</p>
+                            </div>
+                            <div class="story-btn">
+                                <a href="#" class="btn btn-big">Let’s get started</a>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <div class="story-video-overlay">
+                                <button class="story-video-btn">
+                                    <img src="./img/story/play-white.svg" alt="Play">
+                                </button>
+                            </div>
+                            <img src="./img/story/alina-grubnyak-IsxaFsXi2rs-unsplash.jpg" alt="video" class="story-video-object">
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <img src="./img/image.webp" alt="Footer-logo" class="footer-logo">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <div id="speedFooter"></div>
     </body>
 </html>
